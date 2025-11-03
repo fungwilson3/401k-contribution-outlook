@@ -1,2 +1,59 @@
 # 401k-contribution-outlook
-Interactive 401(k) contribution manager — adjust rates, view mock YTD data, and see projected savings impact.
+An interactive single-page web application that allows users to manage their 401(k) retirement contributions. Users can select a contribution type (fixed dollar amount or percentage of paycheck), adjust their contribution rate, and view mock Year-to-Date (YTD) contribution data. The app provides a realistic, frontend-only experience of how contribution changes impact long-term retirement savings.
+
+🚀 Features
+
+Set Contribution Type — Choose between a fixed dollar amount or a percentage of your paycheck.
+
+Adjust Contribution Rate — Use an intuitive slider or input field to set your desired contribution.
+
+View Mock Data — See a simulated salary, YTD contributions, and current savings details.
+
+Projected Savings (Optional) — Visualize how small changes to your contribution rate can affect savings at retirement.
+
+Frontend Only — All data is mocked on the client side; no backend required.
+
+🛠️ Tech Stack
+
+Framework: React + TypeScript
+
+Styling: CSS
+
+Data: Mocked in code (no external API or backend)
+
+📦 Getting Started
+
+Follow these steps to run the project locally.
+
+1. Clone the repository
+git clone https://github.com/your-username/401k-contribution-manager.git
+cd 401k-contribution-manager
+
+2. Install dependencies
+Make sure you have Node.js and npm installed.
+npm install
+
+3. Start the development server
+npm start
+yarn start
+
+This will launch the app in development mode.
+Open http://localhost:3000
+ in your browser to view it.
+
+🧩 Project Structure
+src/
+│
+├── components/      # UI components (slider, input fields, display cards)
+├── data/            # Mock data for salary, YTD contributions, etc.
+├── hooks/           # Custom React hooks (if any)
+├── styles/          # CSS styles
+├── App.tsx          # Main application logic
+└── index.tsx        # Entry point
+
+💡 Future Improvements
+
+Connect to real APIs or backend services
+Add data persistence via local storage
+Include interactive graphs for savings projection
+Enhance accessibility and mobile responsiveness
