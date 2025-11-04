@@ -49,9 +49,14 @@ src
 ├── App.tsx          # Main application logic
 └── index.tsx        # Entry point
 ```
+## 💡 Future Features
+- Interactive FAQ Section : Add a detailed FAQ or “Learn More” area explaining each 401(k) metric (e.g., contribution type, YTD, projected savings) and how they relate to real-world retirement planning.
+- Reverse Contribution Calculator — Allow users to input their target retirement age and desired savings goal, then calculate the required contribution percentage to reach it.
 
 ## 💡 Future Improvements
 - Connect to real APIs or backend services
 - Add data persistence via local storage
 - Include interactive graphs for savings projection
 - Enhance accessibility and mobile responsiveness
+- Salary Growth Simulation — Model how annual salary increases affect contribution growth and retirement balance.
+- Tax Impact Estimator — Estimate how contributions affect take-home pay and potential tax savings.
