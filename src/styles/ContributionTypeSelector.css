@@ -1,0 +1,62 @@
+.contribution-type-selector {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.contribution-type-selector h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.type-options {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.type-button {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.875rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: 1.5px solid #2C7A7B;
+  background: white;
+  color: #2C7A7B;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.type-button:hover {
+  background: #E0F2F2;
+  border-color: #3CB371;
+}
+
+.type-button.active {
+  background: #2C7A7B;
+  color: white;
+  border-color: #2C7A7B;
+}
+
+.type-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(44, 122, 123, 0.2);
+}
+
+@media (max-width: 768px) {
+  .type-options {
+    flex-direction: column;
+  }
+
+  .type-button {
+    width: 100%;
+    min-width: unset;
+  }
+}
+

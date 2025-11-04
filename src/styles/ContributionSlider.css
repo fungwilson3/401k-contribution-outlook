@@ -1,0 +1,157 @@
+.contribution-slider {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.slider-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.slider-header h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.current-value-display {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  background: #E0F2F2;
+  padding: 0.625rem 1.25rem;
+  border-radius: 6px;
+}
+
+.value-label {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.value-amount {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1A535C;
+}
+
+.slider-container {
+  margin-bottom: 1.5rem;
+}
+
+.slider-input {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: #e0e0e0;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.slider-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2C7A7B;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(44, 122, 123, 0.3);
+  transition: all 0.2s ease;
+}
+
+.slider-input::-webkit-slider-thumb:hover {
+  background: #3CB371;
+  box-shadow: 0 2px 8px rgba(44, 122, 123, 0.4);
+}
+
+.slider-input::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2C7A7B;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 4px rgba(44, 122, 123, 0.3);
+  transition: all 0.2s ease;
+}
+
+.slider-input::-moz-range-thumb:hover {
+  background: #3CB371;
+  box-shadow: 0 2px 8px rgba(44, 122, 123, 0.4);
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.input-container {
+  margin-top: 1.25rem;
+}
+
+.input-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.dollar-input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 0.5rem;
+  background: white;
+  transition: border-color 0.2s ease;
+}
+
+.dollar-input-wrapper:focus-within {
+  border-color: #2C7A7B;
+}
+
+.dollar-sign {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2C7A7B;
+  margin-right: 0.5rem;
+}
+
+.number-input {
+  width: 100%;
+  max-width: 180px;
+  padding: 0.625rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.number-input:focus {
+  outline: none;
+}
+
+.helper-text {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #777;
+  font-style: normal;
+}
+
