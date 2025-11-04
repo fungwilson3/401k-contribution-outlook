@@ -13,10 +13,10 @@ export const ContributionSlider: React.FC<ContributionSliderProps> = ({
   contributionValue,
   onValueChange,
 }) => {
-  const maxValue = contributionType === 'percentage' ? 100 : 1000;
-  const minValue = 0;
-  const step = contributionType === 'percentage' ? 0.1 : 10;
   const payPeriodAmount = mockUserData.salary / mockUserData.payPeriodsPerYear;
+  const maxValue = contributionType === 'percentage' ? 100 : payPeriodAmount;
+  const minValue = 0;
+  const step = contributionType === 'percentage' ? 0.1 : 0.01;
 
   const handleSliderChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = parseFloat(e.target.value);
@@ -31,11 +31,11 @@ export const ContributionSlider: React.FC<ContributionSliderProps> = ({
 
   const displayValue = contributionType === 'percentage' 
     ? `${contributionValue.toFixed(1)}%`
-    : `$${contributionValue.toFixed(0)}`;
+    : `$${contributionValue.toFixed(2)}`;
 
   const maxDisplayValue = contributionType === 'percentage'
     ? '100%'
-    : `$${maxValue.toFixed(0)}`;
+    : `$${maxValue.toFixed(2)}`;
 
   return (
     <div className="contribution-slider">
@@ -59,7 +59,9 @@ export const ContributionSlider: React.FC<ContributionSliderProps> = ({
           aria-label={`Adjust ${contributionType === 'percentage' ? 'percentage' : 'dollar amount'} contribution`}
         />
         <div className="slider-labels">
-          <span>${minValue}</span>
+          <span>
+            {contributionType === 'percentage' ? `${minValue}%` : `$${minValue.toFixed(2)}`}
+          </span>
           <span>{maxDisplayValue}</span>
         </div>
       </div>

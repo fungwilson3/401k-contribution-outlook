@@ -43,13 +43,20 @@ export const DisplayCards: React.FC<DisplayCardsProps> = ({
         <p className="card-label">Total 401(k) balance</p>
       </div>
 
+      {/* Bottom Row - Contribution Related */}
+      <div className="card highlight">
+        <h4>Current Contribution</h4>
+        <p className="card-value">{formatCurrency(calculations.payPeriodContribution)}</p>
+        <p className="card-label">Per paycheck</p>
+      </div>
+
       <div className="card highlight">
         <h4>Annual Contribution</h4>
         <p className="card-value">{formatCurrency(calculations.annualContribution)}</p>
         <p className="card-label">
           {contributionType === 'percentage'
             ? `${contributionValue.toFixed(1)}% of salary`
-            : `$${contributionValue.toFixed(0)} per paycheck`}
+            : `$${contributionValue.toFixed(2)} × ${mockUserData.payPeriodsPerYear} pay periods`}
         </p>
       </div>
 
@@ -61,8 +68,8 @@ export const DisplayCards: React.FC<DisplayCardsProps> = ({
 
       <div className="card highlight">
         <h4>Total Annual</h4>
-        <p className="card-value">{formatCurrency(calculations.totalAnnualContribution)}</p>
-        <p className="card-label">Including employer match</p>
+        <p className="card-value">{formatCurrency(calculations.totalAnnualContribution + mockUserData.ytdContributions)}</p>
+        <p className="card-label">Includes employer match and YTD contributions</p>
       </div>
     </div>
   );

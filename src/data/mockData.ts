@@ -10,7 +10,7 @@ export const mockUserData: UserData = {
   salary: 75000,
   ytdContributions: 6250,
   currentSavings: 45000,
-  employerMatch: 50, // 50% match up to a certain limit
+  employerMatch: 6, // 6% match up to a certain limit
   payPeriodsPerYear: 26, // bi-weekly pay
 };
 
