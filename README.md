@@ -1,28 +1,26 @@
 # 401k-contribution-outlook
 An interactive single-page web application that allows users to manage their 401(k) retirement contributions. Users can select a contribution type (fixed dollar amount or percentage of paycheck), adjust their contribution rate, and view mock Year-to-Date (YTD) contribution data. The app provides a realistic, frontend-only experience of how contribution changes impact long-term retirement savings.
 
-🚀 Features
+## 🚀 Features
+- Set Contribution Type — Choose between a fixed dollar amount or a percentage of your paycheck.
 
-Set Contribution Type — Choose between a fixed dollar amount or a percentage of your paycheck.
+- Adjust Contribution Rate — Use an intuitive slider or input field to set your desired contribution.
 
-Adjust Contribution Rate — Use an intuitive slider or input field to set your desired contribution.
+- View Mock Data — See a simulated salary, YTD contributions, and current savings details.
 
-View Mock Data — See a simulated salary, YTD contributions, and current savings details.
+- Projected Savings (Optional) — Visualize how small changes to your contribution rate can affect savings at retirement.
 
-Projected Savings (Optional) — Visualize how small changes to your contribution rate can affect savings at retirement.
+- Frontend Only — All data is mocked on the client side; no backend required.
 
-Frontend Only — All data is mocked on the client side; no backend required.
+## 🛠️ Tech Stack
 
-🛠️ Tech Stack
+- Framework: React + TypeScript
 
-Framework: React + TypeScript
+- Styling: CSS
 
-Styling: CSS
+- Data: Mocked in code (no external API or backend)
 
-Data: Mocked in code (no external API or backend)
-
-📦 Getting Started
-
+## 📦 Getting Started
 Follow these steps to run the project locally.
 
 1. Clone the repository
@@ -31,18 +29,18 @@ cd 401k-contribution-manager
 
 2. Install dependencies
 Make sure you have Node.js and npm installed.
-npm install
+- ```npm install```
 
 3. Start the development server
-npm start
-yarn start
+- ```npm start```
 
 This will launch the app in development mode.
 Open http://localhost:3000
  in your browser to view it.
 
-🧩 Project Structure
-src/
+## 🧩 Project Structure
+```
+src
 │
 ├── components/      # UI components (slider, input fields, display cards)
 ├── data/            # Mock data for salary, YTD contributions, etc.
@@ -50,10 +48,10 @@ src/
 ├── styles/          # CSS styles
 ├── App.tsx          # Main application logic
 └── index.tsx        # Entry point
+```
 
-💡 Future Improvements
-
-Connect to real APIs or backend services
-Add data persistence via local storage
-Include interactive graphs for savings projection
-Enhance accessibility and mobile responsiveness
+## 💡 Future Improvements
+- Connect to real APIs or backend services
+- Add data persistence via local storage
+- Include interactive graphs for savings projection
+- Enhance accessibility and mobile responsiveness
