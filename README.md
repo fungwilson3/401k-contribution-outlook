@@ -24,8 +24,8 @@ An interactive single-page web application that allows users to manage their 401
 Follow these steps to run the project locally.
 
 1. Clone the repository
-- ```git clone https://github.com/your-username/401k-contribution-manager.git```
-- ```cd 401k-contribution-manager```
+- ```git clone https://github.com/your-username/401k-contribution-outlook.git```
+- ```cd 401k-contribution-outlook```
 
 2. Install dependencies. Make sure you have Node.js and npm installed.
 - ```npm install```
